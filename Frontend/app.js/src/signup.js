@@ -55,7 +55,7 @@ function Signup() {
                     <p>{formErrors.name}</p>
                     <div className='mb-3'>
                         <label htmlFor='countrycode'><strong>Country Code</strong></label>
-                        <select placeholder='Enter Country Code' name='countrycode' className='form-control rounded-0' value={formatPhoneNumber(formValues.countrycode, formValues.phone)} onChange={handleChange}>
+                        <select placeholder='Enter Country Code' name='countrycode' className='form-control rounded-0' value={formValues.countrycode} onChange={handleChange}>
                             <option value="93">93</option>
                             <option value="355">355</option>
                             <option value="91">91</option>
@@ -65,7 +65,7 @@ function Signup() {
                     <p>{formErrors.countrycode}</p>
                     <div className='mb-3'>
                         <label htmlFor='phone'><strong>Phone</strong></label>
-                        <input type='text' placeholder='Enter phone no.' name='phone' className='form-control rounded-0' value={formValues.phone} onChange={handleChange} />
+                        <input type='text' placeholder='Enter phone no.' name='phone' className='form-control rounded-0' value={formatPhoneNumber(formValues.countrycode, formValues.phone)} onChange={handleChange} />
                     </div>
                     <p>{formErrors.phone}</p>
                     <button type='submit' className='btn btn-success w-100 rounded-0'>Sign up</button>
