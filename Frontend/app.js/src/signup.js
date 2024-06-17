@@ -4,6 +4,7 @@ import formatPhoneNumber from './phone-number-formatter';
 
 function Signup() {
     const [formValues, setValues] = useState({
+        form: 'A',
         name: '',
         countrycode: '',
         phone: ''

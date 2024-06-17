@@ -1,12 +1,12 @@
-const express = require('express')
-const mysql = require('mysql')
-const cors = require('cors')
+import express, { json } from 'express';
+import { createConnection } from 'mysql';
+import cors from 'cors';
 
 const app = express()
 app.use(cors());
-app.use(express.json());
+app.use(json());
 
-const db = mysql.createConnection({
+const db = createConnection({
     host: 'localhost',
     user: "root",
     phone: '',
@@ -14,19 +14,20 @@ const db = mysql.createConnection({
 })
 
 app.post('/data', (req, res) => {
-    const sql = "INSERT INTO login (`name`, `countrycode`, `phone`) Values(?)";
+    const sql = "INSERT INTO login (`form`, `name`, `countrycode`, `phone`) Values(?)";
     const values = [
+        req.body.form,
         req.body.name,
         req.body.countrycode,
-        re.body.phone,
+        req.body.phone,
     ]
 })
 
 db.query(sql, [values], (err, data) => {
-    if(err) return res.json(err);
+    if (err) return res.json(err);
     return res.json(data);
 })
 
-app.listen(8081, ()=> {
+app.listen(8081, () => {
     console.log("Listening...")
 })
