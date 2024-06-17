@@ -72,7 +72,7 @@ Here's a breakdown of the assignment points for easy understanding:
         * It translates the format (X=any digit, XXX=3 digits) to a pattern and checks if the number matches (e.g., +91 1234 567890).
         * Returns the original number if valid, otherwise an empty string.
 * **Database:**
-    * MySQL database managed by phpMyAdmin.
+    * data.sql with Database folder: MySQL database managed by phpMyAdmin.
     * `server.js` fetches form data (type, name, country code, phone number) (line 16).
 * **Data Synchronization:**
     * `exportToExcel` folder for exporting data to Excel sheets.
