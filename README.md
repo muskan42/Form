@@ -81,7 +81,7 @@ Here's a breakdown of the assignment points for easy understanding:
     * Git used for version control with a provided GitHub link.
 
 ## Installations: 
-*(throughout the project)
+(throughout the project)
 
 * Backend dependencies: `npm install express mysql cors nodemon`
 * Frontend setup:
