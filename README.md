@@ -1,4 +1,4 @@
-# Welcome
+# Welcome !!
 
 ## 🚀 Tech Stack
 - **React.js**: A JavaScript library for building user interfaces.
@@ -43,6 +43,8 @@ visit http://localhost:8081/exportToExcel/
 
 Click refresh to view newly added entries.
 
+---
+
 # Assignment Task
 
 Here's a breakdown of the assignment points for easy understanding:
@@ -86,6 +88,7 @@ Here's a breakdown of the assignment points for easy understanding:
     * `npx create-react-app Frontend` to create the React app.
     * `npm i react-router-dom` to install React Router ( for navigation).
 
+---
 
 <div align="center">
   <h2>Hope you find it interesting! 💻🌟</h2>
