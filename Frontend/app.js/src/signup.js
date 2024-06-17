@@ -70,7 +70,6 @@ function Signup() {
                     <p>{formErrors.phone}</p>
                     <button type='submit' className='btn btn-success w-100 rounded-0'>Sign up</button>
                     <p>You agree to our terms and policies</p>
-                    <a to="/" className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'>Login</a>
                 </form>
             </div>
         </div>
